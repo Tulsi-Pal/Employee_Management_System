@@ -1,0 +1,14 @@
+package net.tulsi.ems_backend.services;
+
+import net.tulsi.ems_backend.dto.EmployeeDto;
+import net.tulsi.ems_backend.entity.Employee;
+
+import java.util.List;
+
+public interface EmployeeService {
+    EmployeeDto createEmployee(EmployeeDto employeeDto);
+    EmployeeDto getEmployeeById(Long employeeId);
+    List<EmployeeDto> getAllEmployees();
+    EmployeeDto updateEmployee(Long employeeId,EmployeeDto updatedEmployee);
+    void deleteEmployee(Long employeeId);
+}
